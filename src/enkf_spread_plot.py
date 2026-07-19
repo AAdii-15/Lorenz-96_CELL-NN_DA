@@ -22,7 +22,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import sys, os
-sys.path.append(os.path.dirname(os.path.abspath('.')))
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from src.lorenz96 import (integrate_lorenz96, make_initial_condition,
                            generate_observations_96)
 from src.enkf import run_enkf_lorenz96, rk4_step, enkf_analysis

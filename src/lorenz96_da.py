@@ -538,7 +538,9 @@ if __name__ == "__main__":
         axes_supp[col].text(0.02, 0.95, ['(a)', '(b)'][col],
                              transform=axes_supp[col].transAxes,
                              fontsize=13, fontweight='bold', va='top',
-                             color='white')
+                             color='black',
+                             bbox=dict(boxstyle='round', facecolor='white',
+                                       alpha=0.8, edgecolor='none'))
         axes_supp[col].set_xlabel('Variable k')
         axes_supp[col].set_ylabel('Time')
         plt.colorbar(im, ax=axes_supp[col])
