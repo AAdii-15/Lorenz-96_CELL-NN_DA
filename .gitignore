@@ -1,0 +1,26 @@
+# Virtual environment
+venv/
+**/venv/
+__pycache__/
+*.pyc
+
+# Entire working-data directories excluded wholesale, not by
+# extension. Everything here is either regenerable from src/ scripts
+# plus the raw MODIS/L4 downloads, or a finalized plot already
+# manually copied to Figures/ -- nothing in data/ or results/ is a
+# deliverable in its own right.
+data/
+results/
+
+# OS cruft
+.DS_Store
+
+# Superseded/unused figures, not referenced anywhere in main25.tex
+Figures/chl_proper_spatial.png
+Figures/multimethod_stochastic.png
+Figures/multimethod_deterministic.png
+Figures/viirs_validation_final.png
+
+# Stale full-source dump, redundant with src/ and prone to drifting
+# out of sync with it
+all_code.txt
